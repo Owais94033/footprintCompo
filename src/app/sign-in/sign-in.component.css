@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #333; /* Dark text */
+    height: 100vh; /* Ensure body takes up full height of viewport */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the container takes the full height */
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Green color */
+  }
+  
+  main.content {
+    display: flex;
+    justify-content: space-between; /* Align content side by side */
+    align-items: center;
+    background-color: #ffffff; /* White background for form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 75%; /* Increase height to allow more space */
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Slightly reduce size */
+  }
+  
+  .form-section {
+    width: 45%; /* Keep form width to 45% */
+  }
+  
+  .image-section {
+    width: 45%; /* Keep image width to 45% */
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light gray border */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4CAF50; /* Green focus border */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .social-login a {
+    text-decoration: none;
+    color: #4CAF50; /* Green links */
+  }
+  
+  .social-login a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .image-section img {
+    width: 100%; /* Allow the image to take up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Increase image height slightly */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+  }
+  

@@ -1,0 +1,15 @@
+<p>reminder-form works!</p>
+<div class="form-group">
+    <input type="text"
+    class="form-control"
+    id='reminder'
+    placeholder="type your reminder"
+    [(ngModel)]="reminderText"
+    name='remindertxt'
+    (keyup)="addReminder($event)"
+    >
+    @if (reminderCreated){
+        <small>Reminder Created...!</small>
+    }
+    
+</div>
